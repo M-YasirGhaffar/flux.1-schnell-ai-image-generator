@@ -4,12 +4,13 @@ const config = require("../config/config");
 const queryHuggingFace = async (data) => {
   try {
     const response = await axios.post(
-      "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell",
+      "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-schnell",
       data,
       {
         headers: {
           Authorization: `Bearer ${config.huggingFaceApiKey}`,
           "Content-Type": "application/json",
+          Accept: "image/png",
         },
         responseType: "arraybuffer", // To handle binary data like an image
         timeout: 5 * 60 * 1000, // 5 minutes timeout

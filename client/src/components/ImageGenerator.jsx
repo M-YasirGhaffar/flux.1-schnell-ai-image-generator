@@ -94,12 +94,8 @@ const ImageGenerator = ({ addGeneratedImage }) => {
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-4xl">
         <div className="flex items-center justify-center space-x-4 mb-8">
-          <div className="bg-white rounded-full p-4">
-            <img
-              src="https://blackforestlabs.ai/wp-content/uploads/2024/07/logo-with-text_more-1280x1213.png"
-              alt="Logo"
-              className="h-12 sm:h-16"
-            />
+          <div className="bg-white rounded-full p-4 flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20">
+            <span className="text-black font-black text-xl sm:text-2xl">BFL</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-white">
           FLUX.1-schnell
